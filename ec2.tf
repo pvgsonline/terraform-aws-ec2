@@ -4,8 +4,8 @@ resource "aws_instance" "terraform"{
     vpc_security_group_ids = var.sg_id
     
 
-    tags = merge var.common_tags ,{
-    Name = "terraform"
-    }
-    
+    tags = merge (var.common_tags ,{
+    Name = "terraform"}
+    )
+    }  
 }   
