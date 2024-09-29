@@ -14,10 +14,10 @@ variable "instances"{
 
 variable "sg_id"{
     type = list(string)
-    default = { }
+    
 }
 
 variable "common_tags"{
     type = map
-    default = {}
+    
 }
