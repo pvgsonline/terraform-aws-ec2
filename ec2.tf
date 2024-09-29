@@ -8,4 +8,3 @@ resource "aws_instance" "terraform"{
     Name = "terraform"}
     )
     }  
-}   
