@@ -1,9 +1,9 @@
 resource "aws_instance" "terraform"{
     ami = var.ami_id
     instance_type = var.instance
-    vpc_security_group_ids = ["sg-04ae891e9bad6b5b6"]
+    vpc_security_group_ids = var.sg_id
 
-    tags = {
+    tags = merge var.common_tags ,{
     Name = "terraform"
     }
     
